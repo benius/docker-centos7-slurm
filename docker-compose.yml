@@ -7,7 +7,7 @@ services:
     stdin_open: true
     tty: true
     volumes:
-      - ./volumes/lib:/var/lib/slurmd
-      - ./volumes/spool:/var/spool/slurmd
-      - ./volumes/log:/var/log/slurm
-      - ./volumes/db:/var/lib/mysql
+      - /Users/masonhsieh/docker-volumes/docker-centos7-slurm/lib:/var/lib/slurmd
+      - /Users/masonhsieh/docker-volumes/docker-centos7-slurm/spool:/var/spool/slurmd
+      - /Users/masonhsieh/docker-volumes/docker-centos7-slurm/log:/var/log/slurm
+      - /Users/masonhsieh/docker-volumes/docker-centos7-slurm/db:/var/lib/mysql
