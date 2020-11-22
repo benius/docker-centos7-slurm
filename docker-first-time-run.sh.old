@@ -1,0 +1,3 @@
+#!/bin/bash
+
+docker run -it -h ernie -d --net=bridge -p 8022:8022 -e "container=docker" --privileged=true -v /sys/fs/cgroup:/sys/fs/cgroup --name slurm-ssh slurm-ssh /usr/sbin/init
